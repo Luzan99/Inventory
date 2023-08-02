@@ -10,7 +10,8 @@ import java.util.Map;
 public interface CategoryRest {
 
     @PostMapping(path = "/add")
-    ResponseEntity<String> addNewCategory(@RequestBody(required = true)Map<String, String> requesrMap);
+    ResponseEntity<String> addNewCategory(@RequestBody(required = true)
+                                          Map<String, String> requestMap);
 
     @GetMapping(path = "/get")
     ResponseEntity<List<Category>> getAllCategory(@RequestParam(required = false)
